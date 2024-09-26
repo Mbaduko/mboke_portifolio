@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro {
+    background-image: url("../../images/bgpic.png");
+    background-size: cover; /* Changed to cover for better responsiveness */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    color: #f3f3f3;
+}
+
+.logo {
+    margin-left: 55px;
+    display: flex;
+    gap: 0.6rem;
+}
+
+.eclipse {
+    width: 32px;
+    height: 36px;
+    background-color: #eea302;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.logot {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.title {
+    position: absolute;
+    top: 264px;
+    left: 139px;
+    font-size: 3rem;
+}
+
+.desc {
+    position: absolute;
+    top: 404px;
+    left: 139px;
+    width: 568px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.links {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardstitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.cardscontainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 15px; /* Gap between cards */
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the card background covers the area */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+   /* Adjusted padding and dimensions for better fit */
+   padding-top: 20px; 
+   padding-bottom: 20px; 
+   text-align: center;
+
+   /* Set width and height to be more flexible */
+   width: auto; 
+   height: 700px; 
+   max-width: calc(100% - 30px); /* To ensure it fits well within the grid */
+   
+   transition: transform 0.3s, box-shadow 0.3s;
+
+   /* Ensure cards are responsive */
+   flex-direction: column; /* Stack content vertically */
+}
+
+.card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.name {
+   color: black;
+   font-size: 1.2rem;
+   font-weight: bold;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+   background-color: rgba(0, 0, 0, 0.6);
+   padding-left : .5rem; 
+   padding-right : .5rem; 
+   border-radius : .5rem; 
+   height: 100%;
+   width: 100%;
+}
+
+/* Responsive layout adjustments for smaller screens */
+@media (max-width: 1024px) {
+   .cardscontainer {
+       grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Two cards per row for tablet view */
+   }
+}
+
+@media (max-width: 768px) {
+   .cardscontainer {
+       grid-template-columns: repeat(1, minmax(250px, auto)); /* One card per row for mobile view */
+       padding-left : .5rem; 
+       padding-right : .5rem; 
+   }
+}
