@@ -1,0 +1,26 @@
+Group Members Contributions
+
+1. Student 1: NSENGIYUMVA Clement
+    o Focused on creating the landing page, which introduces the project and provides navigation links to each student's profile section.
+    o Handled the header and navigation bar implementation.
+    o Collaborated on the shared CSS for the overall layout, ensuring consistency across all pages.
+    o Implemented responsive design for the landing page and navigation elements.
+
+2. Student 2: NZARAMYIMANA Jerome
+    o Built their own profile section with a personal introduction, skills table, and hobbies.
+    o Embedded an audio file showcasing a personal interest or skill.
+    o Included a video presentation in the profile section.
+    o Assisted in styling the individual profile sections using CSS, focusing on unique design elements for their page.
+    o Ensured cross-browser compatibility for multimedia elements.
+
+3. Student 3: NZAYISENGA Emmanuel
+    o Constructed their own profile section similar to Student 2, including personal details, a skills table, hobbies, an audio file, and a video.
+    o Focused on creating the footer that contains links to all students' social media accounts with icons.
+    o Ensured the consistency of styling and structure across all sections of the website.
+    o Implemented accessibility features throughout the site, including alt text for images and proper ARIA labels.
+
+Collaborative Efforts:
+    - All team members participated in regular code reviews to maintain code quality and consistency.
+    - The group collectively decided on the overall theme and color scheme of the website.
+    - Each member contributed to the documentation of the project, including this contribution summary.
+    - The team worked together to test the website across different devices and browsers to ensure a seamless user experience.

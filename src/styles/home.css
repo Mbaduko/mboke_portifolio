@@ -4,9 +4,17 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Intro Section */
 .intro {
     background-image: url("../../images/bgpic.png");
-    background-size: cover; /* Changed to cover for better responsiveness */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
@@ -55,11 +63,13 @@
     line-height: 2rem;
 }
 
+/* Links Section */
 .links {
-    height: 100vh;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 2rem 0;
 }
 
 .cardstitle {
@@ -70,8 +80,9 @@
 
 .cardscontainer {
     display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1fr)); /* Responsive columns */
-    gap: 15px; /* Gap between cards */
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 0 2rem;
 }
 
 .card {
@@ -80,55 +91,104 @@
     justify-content: center;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; /* Ensure the card background covers the area */
+    background-size: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
-   /* Adjusted padding and dimensions for better fit */
-   padding-top: 20px; 
-   padding-bottom: 20px; 
-   text-align: center;
-
-   /* Set width and height to be more flexible */
-   width: auto; 
-   height: 700px; 
-   max-width: calc(100% - 30px); /* To ensure it fits well within the grid */
-   
-   transition: transform 0.3s, box-shadow 0.3s;
-
-   /* Ensure cards are responsive */
-   flex-direction: column; /* Stack content vertically */
+    padding: 20px 0;
+    text-align: center;
+    width: auto;
+    height: 700px;
+    max-width: calc(100% - 30px);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex-direction: column;
+    position: relative;
 }
 
 .card:hover {
-   transform: translateY(-5px);
-   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .name {
-   color: black;
-   font-size: 1.2rem;
-   font-weight: bold;
-   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-   background-color: rgba(0, 0, 0, 0.6);
-   padding-left : .5rem; 
-   padding-right : .5rem; 
-   border-radius : .5rem; 
-   height: 100%;
-   width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: background-color 0.3s;
 }
 
-/* Responsive layout adjustments for smaller screens */
+.card:hover .name {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Footer */
+.footer {
+    background-color: #787878;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    width: 100%;
+    border-top: 1px solid #eea302;
+}
+
+.footer:hover {
+    background-color: #787878;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
-   .cardscontainer {
-       grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Two cards per row for tablet view */
-   }
+    .cardscontainer {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+    
+    .card {
+        height: 500px;
+        max-width: calc(100% - 20px);
+    }
 }
 
 @media (max-width: 768px) {
-   .cardscontainer {
-       grid-template-columns: repeat(1, minmax(250px, auto)); /* One card per row for mobile view */
-       padding-left : .5rem; 
-       padding-right : .5rem; 
-   }
+    .cardscontainer {
+        grid-template-columns: repeat(1, minmax(250px, auto));
+        padding: 0 0.5rem;
+    }
+    
+    .card {
+        height: 400px;
+        max-width: calc(100% - 20px);
+    }
+    
+    .name {
+        font-size: 1rem;
+    }
+    
+    .footer {
+        font-size: 0.8rem;
+        padding: 15px 0;
+    }
+    
+    .title, .desc {
+        left: 20px;
+        width: calc(100% - 40px);
+    }
+    
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .desc {
+        font-size: 1.2rem;
+    }
 }
