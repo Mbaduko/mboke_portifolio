@@ -3,17 +3,16 @@
 :root {
 	/* ------- colors ------- */
 	--primary-color: #27272a;
-	--secondary-color: #65656d;
-	--tertiary-color: #acacb4;
-	--quaternary-color: #e4e4e750;
+	
 	--link-color: #14b8a6;
     ---body-color:#E9E5E5;
     --body3-color:#EEA302;
     --body2-color:#F3F3F3;
-	/* ---------------------- */
+    --secondary-color:#323234;
+
 
 	/* ------- fonts ------- */
-	--primary-font: "Heebo", sans-serif;
+	
 	--secondary-font: "Roboto", sans-serif;
 	/* --------------------- */
 }
@@ -30,11 +29,14 @@ body{
 }
  .section1{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     /* background-color: hsla(0, 0%, 100%, 0.468); */
     background-color: var(---body-color);
     flex-direction: column;
+      padding: 0px  60px;
+
+
 
     /* background-color: aqua; */
  }
@@ -87,12 +89,14 @@ body{
 }
 .intro{
     
-    margin-top:25vh;
+    margin-top:30vh;
     margin-left: 50vh;
     width: 50%;
 
 
 }
+
+
 .intro .title{
     font-size: 40px;
     font-weight: 600;
@@ -134,8 +138,11 @@ hr{
 .section2{
     background-color: var(--body-color);
     height: 100vh;
+    /* border: 2px solid red; */
     display: flex;
-    align-items: center;
+      padding: 0px  60px;
+
+    /* align-items: center; */
 }
 .about{
 display: flex;
@@ -144,6 +151,7 @@ justify-content: space-between;
 flex-direction: row;
 padding-top: 55px;
 width: 95%;
+
 margin: auto;
 
 }
@@ -172,21 +180,26 @@ margin: auto;
 /* skills */
 .section3{
     background-color: var(--body2-color);
-    height: 100vh;
-    display: flex;
-    align-items: center;
+    min-height: 100vh;
+      padding: 0px  60px;
+
+
+    /* display: flex; */
+    /* align-items: center; */
 }
 .about1{
 
-padding-top: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
 width: 95%;
+background-color: var(--body2-color);
 /* border: 2px solid red; */
-height: 80vh;
+height: 100vhvh;
 margin: auto;
 
 }
 .about1 .div1{
-    width: 50%;
+    width: 60%;
 }
 .about1 .intro1{
     margin-top: 20px;
@@ -203,25 +216,69 @@ margin: auto;
     font-size: 20px;
     font-weight: bold;
 }
-.skills{
+.skills {
     width: 100%;
-    padding-top: 32px;
-    
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    /* justify-content: space-between; */
-    flex-wrap: wrap;
+    /* position: absolute; */
+    /* right: 30px; */
+    border-collapse: collapse;
+    margin: 20px 0;
 }
-.skill{
-    border: 1px solid var(--body3-color);
-    width: 156px;
-    height: 148px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+.skill {
+    border: 1px solid hsla(0, 0%, 0%, 0.135);
+
+    padding: 10px;
+    text-align: center;
+    /* vertical-align: top; */
+    width: 33%;
+    height: 150px;
+    /* border: 2px solid red; */
+}
+
+.skill img {
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-top: 5px;
+}
+.level{
+    width: 200px;
+    height: 10px;
+
+    border: 1px solid hsla(0, 0%, 0%, 0.148);
+    border-radius: 20px;
+     margin: auto;
+    background-color: var(--body-color);
+}
+.level-wrapper{
+display: flex;
+gap: 10px;
+margin: auto;
+width: 220px;
+}
+.level1{
+    width: 60%;
+    height: 10px;
+    background-color: var(--body3-color);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: auto;
+    float: left;
+
+}
+.level3{
+    width: 70%;
+    height: 10px;
+    background-color: var(--body3-color);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: auto;
+    float: left;
+
+}
+.tech {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
 }
 /* .about-image1{
     width: 400px;
@@ -234,7 +291,7 @@ margin: auto;
 } */
  .section4{
     background-color: var(--body-color);
-    height: 100vh;
+    height: 80vh;
     /* display: flex; */
     align-items: center;
  }
@@ -245,13 +302,45 @@ margin: auto;
  }
  .video{
     margin-top: 44px;
+    
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* border: 2px solid red; */
+    /* flex-direction: column; */
+    gap:10px
+ }
+ .video div audio{
+    margin-top: 20vh;
+ }
+ .video div {
+    margin-top: 20px; 
+    width: 45%; 
+    border-radius: 10px; 
+    padding: 15px; 
+    border: 1px solid var(--body3-color); 
+    
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.video div:hover {
+    background-color: var(--link-color); 
+    transform: translateY(-5px); 
+}
+
+ .video div p{
+    font-weight: 600;
+    padding-bottom: 20px;
+
  }
  .section5{
     background-color: var(--body2-color);
     height: 30vh;
     display: flex;
     justify-content: space-between;
-    padding: 0 55px;
+      padding: 0px  60px;
+
+
 
     align-items: center;
  }

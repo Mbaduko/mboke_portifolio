@@ -1,9 +1,27 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Roboto:wght@500&display=swap");
+
+:root {
+	/* ------- colors ------- */
+	--primary-color: #27272a;
+	
+	--link-color: #14b8a6;
+    ---body-color:#E9E5E5;
+    --body3-color:#EEA302;
+    --body2-color:#F3F3F3;
+
+
+	/* ------- fonts ------- */
+	
+	--secondary-font: "Roboto", sans-serif;
+	/* --------------------- */
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--secondary-font);
 }
-
 body {
     display: flex;
     flex-direction: column;
@@ -44,7 +62,7 @@ body {
 .logot {
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .title {
@@ -59,12 +77,46 @@ body {
     top: 404px;
     left: 139px;
     width: 568px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
     line-height: 2rem;
 }
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:25px;
+    /* border: 2px solid red; */
+
+    margin: 0 40px;
+ }
+ ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 100px;
+    width: 35%;
+    font-size: 15px;
+    font-weight: 600;
+ }
+ li{
+    list-style-type: none;
+    color: white;
+ }
+ li:hover{
+    color: var(--link-color);
+ }
+ li a{
+    color: white;
+    text-decoration: none;
+ }
+ li a:hover{
+    color: var(--link-color);
+    
+ }
 
 /* Links Section */
-.links {
+/* .links {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -97,8 +149,8 @@ body {
     padding: 20px 0;
     text-align: center;
     width: auto;
-    height: 700px;
-    max-width: calc(100% - 30px);
+    height: 400px;
+    max-width: calc(90% - 30px);
     transition: transform 0.3s, box-shadow 0.3s;
     flex-direction: column;
     position: relative;
@@ -131,7 +183,7 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Footer */
+
 .footer {
     background-color: #787878;
     color: #f3f3f3;
@@ -147,7 +199,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 1024px) {
     .cardscontainer {
         grid-template-columns: repeat(2, minmax(200px, 1fr));
@@ -191,4 +243,4 @@ body {
     .desc {
         font-size: 1.2rem;
     }
-}
+} */

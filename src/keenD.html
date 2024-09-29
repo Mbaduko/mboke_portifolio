@@ -7,27 +7,29 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <section class="section1">
+    <section class="section1" id="section1">
       <nav>
         <div class="logo-wrapper">
           <div class="logo">k</div>
           <p>een</p>
         </div>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="hobies.html">Hobies</a></li>
+          <li><a href="home.html">Home</a></li>
+
+          <li><a href="#section2">About</a></li>
+          <li><a href="#section3">Skills</a></li>
+          <li><a href="#section4">Hobies</a></li>
         </ul>
       </nav>
       <div class="intro">
         <div class="description">
           <p class="title">
             <span
-              >I am Nzayisenga Emmanuel ux/ui designer and web developer</span
+              >I Nzayisenga Emmanuel ux/ui designer and web developer👌👌👌👌👌💻💻💻💻</span
             >
             <br />
           </p>
+          <!-- <img src="../images/int.png" width="20" height="50"> -->
         </div>
       </div>
 
@@ -40,7 +42,7 @@
         });
       </script>
     </section>
-    <div class="section2">
+    <div class="section2" id="section2">
       <div class="about">
         <div class="div">
           <p class="head">About Me</p>
@@ -56,11 +58,11 @@
           </p>
         </div>
         <div class="about-image">
-          <img src="../images/keen.png" width="244" height="320" />
+          <img src="../images/emmy.png" width="244" height="320" />
         </div>
       </div>
     </div>
-    <div class="section3">
+    <div class="section3" id="section3">
       <div class="about1">
         <div class="div1">
           <p class="head1">Skill overview</p>
@@ -78,81 +80,170 @@
         <center>
           <p class="tech">Technologies</p>
         </center>
-        <div class="skills">
-          <div class="skill">
-            <center>
-              <p>Html & css</p>
-              <img src="/images/1.jpeg"
-            </center>
-          </div>
-          <div class="skill">
-            <center>
-              <p>Html & css</p>
-              <img src="/images/6.jpeg"
-            </center>
-          </div>
-          <div class="skill">
-            <center>
-              <p>Html & css</p>
-              <img src="/images/2.jpeg"
-            </center>
-          </div>
-          <div class="skill">
-            <center>
-              <p>Html & css</p>
-              <img src="/images/4.jpeg"
-            </center>
-          </div>
-          <div class="skill">
-            <center>
-              <p>Html & css</p>
-              <img src="/images/5.jpeg"
-            </center>
-          </div>
-          <div class="skill">
-            <center>
-              <p>Html & css</p>
-              <img src="/images/7.jpeg"
-            </center>
-          </div>
-        </div>
+        <table class="skills">
+          <tr>
+            <td class="skill">
+              <p>Sass</p>
+              <img src="/images/sasss.png" alt="Skill 1" /><br />
+
+              <div class="level-wrapper">
+                <div class="level">
+                  <div class="level1"></div>
+                </div>
+                <p>60%</p>
+              </div>
+            </td>
+            <td class="skill">
+              <p>Mongo db</p>
+              <img
+                src="/images/monodb.png"
+                alt="Skill 2"
+                width="40"
+                height="40"
+              />
+              <div class="level-wrapper">
+                <div class="level">
+                  <div class="level3"></div>
+                </div>
+                <p>70%</p>
+              </div>
+            </td>
+            <td class="skill">
+              <p>Html and css</p>
+              <img
+                src="/images/htmlcss.png"
+                alt="Skill 3"
+                width="40"
+                height="40"
+              />
+              <div class="level-wrapper">
+                <div class="level">
+                  <div class="level3"></div>
+                </div>
+                <p>70%</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="skill">
+              <p>tail wind css</p>
+              <img
+                src="/images/tailwind.png"
+                alt="Skill 4"
+                width="40"
+                height="40"
+              />
+              <div class="level-wrapper">
+                <div class="level">
+                  <div class="level1"></div>
+                </div>
+                <p>60%</p>
+              </div>
+            </td>
+            <td class="skill">
+              <p>React js</p>
+              <img
+                src="/images/reactjs.png"
+                alt="Skill 5"
+                width="40"
+                height="40"
+              />
+              <div class="level-wrapper">
+                <div class="level">
+                  <div class="level1"></div>
+                </div>
+                <p>60%</p>
+              </div>
+            </td>
+            <td class="skill">
+              <p>Node js</p>
+              <img
+                src="/images/nodejs.png"
+                alt="Skill 6"
+                width="40"
+                height="40"
+              />
+              <div class="level-wrapper">
+                <div class="level">
+                  <div class="level1"></div>
+                </div>
+                <p>60%</p>
+              </div>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
-    <div class="section4">
+
+    <div class="section4" id="section4">
       <center>
         <p class="hobies-head">My hobies</p>
       </center>
       <center class="video">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/hgNSIWOpQao?si=DS7TXnI4ZqfKUzR-"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        <div>
+          <p>My favourite audio Acapulo by Json derulo</p>
+          <audio controls>
+            <source
+              src="../images/Jason Derulo - Acapulco [Official Music Video].mp3"
+              type="audio/mp3"
+            />
+            <source
+              src="../images/images/Jason Derulo - Acapulco [Official Music Video].mp3"
+              type="audio/ogg"
+            />
+            Your browser does not support the audio tag.
+          </audio>
+        </div>
+
+        <div>
+          <p>My favourite video Closer</p>
+          <video width="300" height="300" controls>
+            <source
+              src="../images/Closer - Uncle Austin, Meddy & Yvan Buravan (Official Video).mkv"
+              type="video/mp4"
+            
+            />
+            <source
+              src="../images/Closer - Uncle Austin, Meddy & Yvan Buravan (Official Video).mkv"
+              type="video/webm"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div>
+          <p>My favourite player is Ronaldo as usual</p>
+          <iframe
+            width="300"
+            height="300"
+            src="https://www.youtube.com/embed/OUKGsb8CpF8?si=m789HSK0IFajYFLr"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </center>
     </div>
     <div class="section5">
-        <div>
-            <p>Phone</p>
-            <p>0790838315</p>
+      <div>
+        <p>Phone</p>
+        <p>0790838315</p>
+      </div>
+      <div>
+        <p>Email</p>
+        <p>nzayisengaemmy2001@gmail.com</p>
+      </div>
+      <div>
+        <p>follow us</p>
+        <div style="display: flex; gap: 10px">
+          <img src="../images/Iins.png" />
+          <img src="../images/faCEBOOK.png" />
+          <img src="../images/x.png" /><img src="../images/linkenin.png" />
         </div>
-        <div>
-            <p>Email</p>
-            <p>nzayisengaemmy2001@gmail.com</p>
-        </div>
-        <div>
-            <p>follow us</p>
-            <img src="../images/3.jpeg"
-            >
-        </div>
-        <div>
-           &copy;2024 by keend
-        </div>
-      
+      </div>
+      <div>&copy;2024 by keend</div>
     </div>
   </body>
 </html>
